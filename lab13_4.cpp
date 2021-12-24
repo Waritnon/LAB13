@@ -1,7 +1,8 @@
 #include<iostream>
 
 using namespace std;
-
+template <class ALL>
+void mySwap(ALL &,ALL &);
 int main(){
 	int x, y;
 	string a, b;
@@ -29,4 +30,11 @@ int main(){
 
 	return 0;
 }
-
+template <class ALL>
+void mySwap(ALL &x,ALL &y){
+	ALL a,b;
+	a = x;
+	b = y;
+	x = b;
+	y = a;
+}
